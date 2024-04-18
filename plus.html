@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="src/plus.css">
     <title>Weather app</title>
 </head>
 <body>
     <div class="weather-app">
    <header>
-    <form>
-        <input type="text" placeholder="Enter your city" required>
-        <input type="submit" value="search">
+    <form class="search-form">
+        <input type="text" placeholder="Enter your city" required class="city-input">
+        <input type="submit" value="search" class="search-submit">
     </form>
    </header>
    <main>
     <div class="temperature-container">
-        <div class="temperature-details">
+        <div >
             <h1>paris</h1>
-            <p>tuesday 12 17:43 , clear sky 
+            <p class="temperature-details">
+                tuesday 12 17:43 , clear sky 
                 <br>
-                humidity:66% ,windspeed:2km/h
+                humidity: <strong>66%</strong>  ,windspeed: <strong>2km/h</strong> 
             </p>
         </div>
         <div class="temperatures">
-            🌥20℃
+            <div class=" temperature-icon">🌥</div>
+            <div class="temperature-value">20</div>
+            <div class="temperature-units">℃</div>
+        </div>
         </div>
         <div class="weather-forecast">
-            <div>thur</div>
-            <div>⛈</div>
-            <div>23° 18°</div>
+            <div class="forecast-day">thur</div>
+            <div class="forecast-icon">⛈</div>
+            <div class="forecast-temperatures"><span>23°</span> <span class="temperature-min">18°</span></div>
         </div>
-    </div>
+    
    </main> 
    <footer> this project was coded by <a href="https://github.com/vincenci" target="_blank">Vincencia</a> is <a href="https://github.com/vincenci/plus-project" target="_blank">opensourced on github</a> and <a href="#" target="_blank">hosted on Netlify
    </a></footer>
