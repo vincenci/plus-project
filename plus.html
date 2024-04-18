@@ -8,43 +8,42 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
         <link rel="stylesheet" href="src/plus.css">
     <title>Weather app</title>
 </head>
 <body>
     <div class="weather-app">
    <header>
-    <form class="search-form">
-        <input type="text" placeholder="Enter your city" required class="city-input">
+    <form class="search-form" id="search-form">
+        <input type="text" placeholder="Enter your city" required class="city-input" id="city-input">
         <input type="submit" value="search" class="search-submit">
     </form>
    </header>
    <main>
     <div class="temperature-container">
         <div >
-            <h1>paris</h1>
+            <h1 id="city">paris</h1>
             <p class="temperature-details">
-                tuesday 12 17:43 , clear sky 
+                <span id="time">tuesday 12 17:43</span> ,<span id="description">clear sky</span>  
                 <br>
-                humidity: <strong>66%</strong>  ,windspeed: <strong>2km/h</strong> 
+                humidity: <strong><span id="humidity">66</span>%</strong>  ,windspeed: <strong><span id="windspeed">2</span>km/h</strong> 
             </p>
         </div>
         <div class="temperatures">
-            <div class=" temperature-icon">🌥</div>
-            <div class="temperature-value">20</div>
+            <div class=" temperature-icon" id="icon">🌥</div>
+            <div class="temperature-value"id="temperature-value">20</div>
             <div class="temperature-units">℃</div>
         </div>
         </div>
-        <div class="weather-forecast">
-            <div class="forecast-day">thur</div>
-            <div class="forecast-icon">⛈</div>
-            <div class="forecast-temperatures"><span>23°</span> <span class="temperature-min">18°</span></div>
-        </div>
+        <div class="weather-forecast" id="weather-forecast">
+            </div>
     
    </main> 
    <footer> this project was coded by <a href="https://github.com/vincenci" target="_blank">Vincencia</a> is <a href="https://github.com/vincenci/plus-project" target="_blank">opensourced on github</a> and <a href="#" target="_blank">hosted on Netlify
    </a></footer>
 
 </div>
+<script src="src/plus.js"></script>
 </body>
 </html>
