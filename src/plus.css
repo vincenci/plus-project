@@ -80,6 +80,7 @@ a {
     display: flex;
     margin-top: 30px;
     justify-content: space-around;
+}
 .forecast-icon {
     width: 88px;
     height: 88px;
